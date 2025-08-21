@@ -8,9 +8,10 @@ import Product from '../components/Product'
 import { useEffect } from 'react'
 import { getProduct, removeError } from '../features/products/productSlice'
 import Loader from '../components/Loader'
+
+import NOproducts from './NOproducts.jsx'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import Noproducts from './NOproducts.jsx'
 import Pagination from '../components/Pagination.jsx'
 function Products() {
   const { loading, error, products, totalPages, resultPerPage, productCount } = useSelector(state => state.product);
@@ -92,7 +93,7 @@ function Products() {
                     <Product key={product._id} product={product} />
                   ))
                 }
-              </div>) : (<Noproducts keyword={keyword} />)
+              </div>) : (<NOproducts keyword={keyword} />)
             }
             <Pagination
               currentPage={currentPage}
