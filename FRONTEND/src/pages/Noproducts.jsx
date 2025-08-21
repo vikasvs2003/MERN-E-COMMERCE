@@ -1,6 +1,6 @@
 import React from 'react'
-import '../componentStyles/Noproducts.css'
-function NOproducts({keyword}) {
+import '../componentStyles/NoProducts.css'
+function Noproducts({keyword}) {
   return (
     <div className="no-product-content">
         <div className="no-products-icon"> ⚠️</div>
@@ -17,4 +17,4 @@ function NOproducts({keyword}) {
   )
 }
 
-export default NOproducts
+export default Noproducts

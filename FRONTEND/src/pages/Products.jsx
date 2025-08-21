@@ -8,8 +8,7 @@ import Product from '../components/Product'
 import { useEffect } from 'react'
 import { getProduct, removeError } from '../features/products/productSlice'
 import Loader from '../components/Loader'
-
-import NOproducts from './NOproducts.jsx'
+import Noproducts from './Noproducts.jsx'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Pagination from '../components/Pagination.jsx'
@@ -93,7 +92,7 @@ function Products() {
                     <Product key={product._id} product={product} />
                   ))
                 }
-              </div>) : (<NOproducts keyword={keyword} />)
+              </div>) : (<Noproducts keyword={keyword} />)
             }
             <Pagination
               currentPage={currentPage}
