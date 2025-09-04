@@ -45,8 +45,12 @@ A **full-stack E-Commerce web application** built using the **MERN stack** with 
 ### 🏠 Homepage
 ![Homepage Screenshot](./screenshots/homepage.png)
 
-### 🏠 Auth
-![Homepage Screenshot](./screenshots/auth.png)
+
+### 🏠 Login
+![Homepage Screenshot](./screenshots/login.png)
+
+### 🏠 Sign Up
+![Homepage Screenshot](./screenshots/signup.png)
 
 ### 🛒 Product Page
 ![Product Page Screenshot](./screenshots/productpage.png)
